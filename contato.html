@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Petrus - Escola Cristã Clássica</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logoPetrus.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700;800&display=swap"
+        rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner" 
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar -->
+    <div class="container-fluid bg-white sticky-top wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="fw-bold m-0 text-white">Petrus</h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="pilares.html" class="nav-item nav-link">Pilares</a>                        
+                        <a href="sobrenos.html" class="nav-item nav-link">Sobre nós</a>
+                        <a href="contato.html" class="nav-item nav-link active">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container pt-5">
+            <div class="row gy-5 gx-0">
+                <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-6 text-uppercase text-white mb-4">Quer saber mais?
+                    </h1>
+                    <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">
+                        Se você deseja conhecer mais sobre nossa escola, envie-nos uma mensagem ou clique no icone do Whatsapp no lado direito da tela.</p>
+                    <hr class="bg-body">
+                </div>
+                <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="bg-white p-5">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Nome">
+                                    <label for="name">Nome</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control border-0 bg-light" id="mail" placeholder="Email">
+                                    <label for="mail">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0 bg-light" id="mobile" placeholder="Telefone">
+                                    <label for="mobile">Telefone</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select class="form-select border-0 bg-light" id="service">
+                                        <option selected>Secretaria</option>
+                                        <option value="">Financeiro</option>
+                                    </select>
+                                    <label for="service">Escolha o serviço</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control border-0 bg-light" placeholder="Digite sua mensagem aqui" id="message"
+                                        style="height: 130px"></textarea>
+                                    <label for="message">Mensagem</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Escola Petrus</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Jardim Botânico, Brasília, DF</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+55 61 9999-9999</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@escolapetrus.com.br</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Horário de funcionamento</h5>
+                    <p class="text-uppercase mb-0">Segunda - Sexta</p>
+                    <p>07:00 am - 18:00 pm</p>
+                    <p class="text-uppercase mb-0">Sábado</p>
+                    <p>09:00 am - 12:00 pm</p>
+                    <p class="text-uppercase mb-0">Domingo</p>
+                    <p>Fechado</p>
+                </div>
+            </div>
+        </div>
+        <iframe class="w-100 h-100"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1138.5773110903147!2d-47.89475938919104!3d-15.78191569268219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1750446273728!5m2!1spt-BR!2sbr"
+        frameborder="0" style="min-height: 500px; border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>     
+    <!-- footer end -->
+
+    <div id="whatsapp-popup">
+        <div id="whatsapp-popup-header">
+            <span>WhatsApp</span>
+            <button id="close-popup">&times;</button>
+        </div>
+        <div id="whatsapp-popup-body">
+            <div class="chat-bubble">
+                Olá 👋<br>
+                Podemos Ajudá-lo?
+             </div>
+         </div>
+        <button id="open-chat">
+            <a href="https://api.whatsapp.com/send/?phone=5561992187505" target="_blank">Abrir bate-papo ➤</a>
+        </button>
+    </div>
+    <!-- button whatsapp -->
+    <a id="open-whatsapp-popup" class="whatsapp-button">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script>
+    document.getElementById("close-popup").onclick = function() {
+        document.getElementById("whatsapp-popup").style.display = "none";
+    };
+    </script>     
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  
+</body>
+
+</html>
