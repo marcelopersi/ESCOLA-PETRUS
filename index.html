@@ -67,29 +67,18 @@
     </div>
     <!-- Navbar end -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-6 wow fadeIn" data-wow-delay="0.1s">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="ratio ratio-16x9">
-                    <video autoplay playsinline>
-                        <source src="videos/Institucional.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
-                </div>
-                <div class="carousel-caption">
-                </div>
-                <!-- <div class="floating-image">
-                    <img src="img/logo-carousel.png" alt="Logo Flutuante">
-                </div> -->
-                <div class="floating-text">
-                    <h2 class="text-white  col-lg-6 wow mb-4 animated zoomIn" style="text-align: justify">
-                    </h2>
-                </div>
-            </div>
+    <!-- animacao start -->
+<div class="container-fluid p-0 mb-6 wow fadeIn" data-wow-delay="0.1s" style="position: relative; height: 100vh;">
+    <div class="carousel-wrapper position-relative" style="height: 100%;">
+        <img class="w-100 img-fluid h-100" src="img/carousel-1.jpg" alt="Imagem da escola cristã clássica" style="object-fit: cover;">
+        <div class="txt-animado position-absolute d-flex" style="top: 50%; left: 50%; right: 5%; transform: translateY(-50%); max-width: 45%; padding: 1rem;">
+            <span class="prefixo">Imagine</span>
+            <span class="espaco"></span>
+            <span id="frase-digitada"></span>
         </div>
     </div>
-    <!-- Carousel End -->
+</div>
+<!-- animacao end -->
 
 
     <!-- pilares Start -->
@@ -101,21 +90,21 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div>
-                        <h5>1. Cosmovisão Cristã - Criacionista</h5>
+                        <h5>1. Cosmovisão Cristã</h5>
                         <p style="text-align: justify; line-height: 2.0;">
                             Não enxergamos a educação como um fim em si mesma, mas como um serviço prestado ao nosso Salvador, Jesus Cristo.
                         </p>
                     </div>
 
                     <div>
-                        <h5>2. Educação Clássica - As Sete Artes Liberais a Serviço do Reino.</h5>
+                        <h5>2. Educação Clássica</h5>
                         <p style="text-align: justify; line-height: 2.0;">
                             Formamos mentes e corações por meio do modelo clássico: uma jornada da ordem à sabedoria, da razão à beleza, com base no Trivium — gramática, lógica e retórica — para educar com verdade e propósito.
                         </p>
                     </div>
 
                     <div>
-                        <h5>3. Parceria com as Famílias - Comunidade de Aliança</h5>
+                        <h5>3. Parceria com as Famílias</h5>
                         <p style="text-align: justify; line-height: 2.0;">
                             Caminhamos ao lado das famílias, reconhecendo os pais como líderes do lar e parceiros na missão de discipular, educar e formar uma geração firmada na fé e na Palavra de Deus.
                         </p>
@@ -128,7 +117,7 @@
 
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s"> 
                     <div class="pilar-img-interna">
-                        <img class="img-fluid w-100" src="img/pilar.png" alt="Pilares">
+                        <img class="img-fluid w-100" src="img/pilar1.png" alt="Pilares">
                     </div>
                 </div>
             </div>
@@ -287,6 +276,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/content.js"></script>
   
 </body>
 

@@ -105,8 +105,8 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: rgb(202, 155, 34);
-    border-color: rgb(202, 155, 34);
+    background-color: rgb(217, 164, 65);
+    border-color: rgb(217, 164, 65);
     border-radius: 5px;
 
 }
@@ -131,7 +131,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color:darkgoldenrod;
+    color:rgb(217, 164, 65);
 }
 
 .navbar .dropdown-toggle::after {
@@ -370,6 +370,113 @@
     font-size: 18px;
     cursor: pointer;
 }
+
+.txt-animado {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Crimson Pro', serif;
+    max-width: 90%;
+    color: #d9A441;
+    display: flex;
+    justify-content: flex-start; /* Começa da esquerda */
+    align-items: center; /* Centraliza o texto digitado e cursor verticalmente */
+    line-height: 1.6;
+    z-index: 2;
+}
+
+.prefixo {
+    color: white;
+    white-space: nowrap;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    flex-shrink: 0;
+
+    /* Ajuste para subir o texto "Imagine" sem afetar a linha base do container */
+    align-self: flex-start;  /* Faz o prefixo alinhar ao topo do container flex */
+}
+
+.espaco {
+    width: 1rem;
+    flex-shrink: 0;
+}
+
+#frase-digitada {
+    color: #d9A441;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.destaque {
+  color: white !important;
+  font-weight: 700;
+}
+
+.cursor {
+    color: #d9A441;
+    font-weight: 700;
+    font-size: 2rem;
+    animation: piscarCursor 0.7s steps(2, start) infinite;
+    margin-left: 0.25rem;
+    flex-shrink: 0;
+}
+
+@keyframes piscarCursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Container da imagem para garantir ocupa 50% */
+.imagem-lado-esquerdo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container do texto - ocupa 50% da largura */
+.texto-lado-direito {
+    background-color: #0c2c5e; /* fundo escuro para contraste */
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column !important;
+    }
+
+    .imagem-lado-esquerdo, .texto-lado-direito {
+        flex-basis: auto !important;
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .texto-lado-direito {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .prefixo, #frase-digitada, .cursor {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
 
 body {
   font-family: 'Crimson Pro', serif;
